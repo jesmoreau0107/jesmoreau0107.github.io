@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+:root{
+  --main-color:#d3ad7f;
+  --black:#13131a;
+  --bg:#010103;
+  --border:.1rem solid rgba(255,255,255,.3);
+  --green:#338f2e;
+  --dark-green: #031c03 ;
+}
+*
+{
+  font-family: 'Roboto', sans-serif;
+}
+
+/* START of Contact */
+body
+{
+ background: var(--black);
+ -webkit-background-size:cover;
+ background-size: cover;
+ background-position: center center;
+ 
+ display: flex;
+ flex-direction: column;
+}
+
+.contact-form{
+    background: var(--black);
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 70%;
+}
+.contact-form .form-control{
+    border-radius:0.67rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.contact-image{
+    text-align: center;
+}
+.contact-image img{
+    border-radius: 6rem;
+    width: 20%;
+    margin-top: -3%;
+}
+.contact-form form{
+    padding: 14%;
+}
+.contact-form form .row{
+    margin-bottom: -7%;
+}
+.contact-form h3{
+    margin-bottom: 4%;
+    margin-top: -10%;
+    margin-left: -76%;
+    text-align: center;
+    color: var(--green);
+}
+.contact-form .btnContact {
+    width: 50%;
+    border: none;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1.5%;
+    background: var(--green);
+    font-weight: 600;
+    color: var(--black);
+    cursor: pointer;
+}
+.btnContactSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1.5%;
+    color: var(--black);
+    background-color: var(--dark-green);
+    border: none;
+    cursor: pointer;
+}
+/* End of Contact */
+
+/* Index */
+.header{
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:0rem 1.5rem 0rem 0rem;
+  height: 5rem;
+  position: fixed;
+  top:0; left: 0; right: 0;
+  z-index: 1000;
+}
+
+.header .logo img{
+  height: 0.5rem;
+}
+
+
+.header .navbar a{
+  float:middle;
+  margin:0 1rem;
+  font-size: 1rem;
+  color: var(--green);
+}
+
+.header .navbar a:hover{
+  color:var(--main-color);
+  border-bottom: .1rem solid var(--main-color);
+  padding-bottom: .5rem;
+}
+
+.header .icons div{
+  color:#fff;
+  cursor: pointer;
+  font-size: 2.5rem;
+  margin-left: 2rem;
+}
+
+.header .icons div:hover{
+  color:var(--main-color);
+}
+.footer
+{  
+  display:flex;
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 45px;
+  justify-content:center;
+    align-items:space-between;
+  }
+
+.footer .share{
+    padding:1rem 0;
+    justify-content: center;
+    text-align:center;
+}
+
+.footer .share a{
+    position: fixed;
+    height: 1.5rem;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    color: var(--green);
+    border:var(--border);
+    margin: -1rem;
+    border-radius: 50%;
+    
+}
+
+.footer .share a:hover{
+    background-color: var(--dark-green);
+}
+
+
+
+.footer .creditos{
+    position: fixed;
+    font-size: 1rem;
+    color:#fff;
+    font-weight: lighter;
+    bottom: 0;
+}
+
+.footer .creditos span{
+
+    color:var(--green);
+}
+
+.footer .creditos span:hover{
+
+  color:var(--green);
+}
+
+
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding:1.5rem 2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+}
+
+@media (max-width:768px){
+    p{
+    float: middle;
+    margin: 0 1rem;
+
+    }
+    .header{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0rem 1.5rem 0rem 0rem;
+
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+    }
+
+    .header .logo img{
+    height: 0.5rem;
+    }
+
+
+    .header .navbar a{
+    float:middle;
+    margin:0 1rem;
+    font-size: 1rem;
+    color: var(--green);
+    }
+
+    .header .navbar a:hover{
+    color:var(--main-color);
+    border-bottom: .1rem solid var(--dark-green);
+    padding-bottom: .5rem;
+    }
+
+    .header .icons div{
+    color:#fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    }
+
+    .header .icons div:hover{
+    color:var(--main-color);
+    }
+    #effect{
+    font-size: 40px;
+    font-weight: lighter;
+    color: rgb(51, 143, 46);
+    text-align: center;
+    transform: translateY(600%);
+    font-family: 'Roboto', sans-serif;
+    }
+
+    .footer{  
+    display:flex;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-top: 1px solid --border;
+    justify-content:center;
+    align-items:space-between;
+    }
+
+
+
+    .footer .share{
+    padding:1rem 0;
+    justify-content: center;
+    text-align:center;
+    }
+
+    .footer .share a{
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    font-size: 2rem;
+    color: var(--green);
+    border:var(--border);
+    margin:.3rem;
+    border-radius: 50%;
+    
+    }
+
+    .footer .share a:hover{
+    background-color: var(--dark-green);
+    }
+
+
+
+    .footer .creditos{
+    position: fixed;
+    font-size: 1rem;
+    color:#fff;
+    font-weight: lighter;
+    bottom: 0;
+    }
+
+    .footer .creditos span{
+
+    color:var(--green);
+    }
+
+    .footer .creditos span:hover
+    {
+
+    color:var(--green);
+    }
+}

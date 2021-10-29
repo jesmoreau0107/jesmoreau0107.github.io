@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TEST</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- typewriter_JS--core-->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <!-- ANIMEJS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.js" integrity="sha512-E378bwaeZf1nwXeJGIwTB58A5gPt5jFU3u6aTGja4ZdRFJeo/N/REKnBgNZOZlH6JdnOPO98vg2AnSGaNfCMFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<!-- START Header  -->
+<header class="header">
+    <a href="test.html" class="logo">
+        <svg width="92" height="92" viewBox="0 0 128 128" href="test.html">
+            <filter id="displacementFilter">
+              <feTurbulence type="turbulence" baseFrequency=".05" numOctaves="2" result="turbulence"/>
+              <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="15" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+            <polygon points="64 68.64 8.574 100 63.446 67.68 64 4 64.554 67.68 119.426 100" style="filter: url(#displacementFilter)" fill="currentColor"/>
+          </svg>
+          <script>
+            anime({
+              targets: ['.svg-attributes-demo polygon', 'feTurbulence', 'feDisplacementMap'],
+              points: '64 128 8.574 96 8.574 32 64 0 119.426 32 119.426 96',
+              baseFrequency: 0,
+              scale: 1,
+              loop: true,
+              direction: 'alternate',
+              easing: 'easeInOutExpo'
+            });
+          </script>
+    </a>
+
+    <nav class="navbar">
+        <a href="test.html"></a>
+        <a href="pensamientos.html">Pensamientos</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+</header>
+<!-- END Header  -->
+
+
+
+
+
+
+<body>
+  <div id="contenedor">
+    <!-- GIF de barquito-->
+    <img src="barquito.gif" style='float:left;'> 
+    <div id="pensamientos">
+      La vida es un poema.
+    </div>
+    <span id='texto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. At totam quia natus explicabo? Consectetur sequi, accusamus delectus deserunt temporibus repellendus tempore, et eius iusto sed libero ut maiores, non voluptate vitae officia? Voluptatum, enim? Voluptatibus modi amet dolorum illum iure voluptatem, debitis non aperiam! Est sit debitis similique praesentium aspernatur ipsam vel et, atque eligendi, ratione beatae ut fuga? Ducimus nisi quisquam repellendus nam voluptates dolor consectetur sed ad fugit doloremque magnam molestias architecto, exercitationem nihil error porro ratione ipsum in earum doloribus facilis! Culpa nisi ut possimus dolorem omnis, ex, rerum recusandae eos deserunt mollitia, ipsam ratione ducimus consequuntur.</span>
+  </div>
+<!-- END--GIF de barquito-->
+
+
+
+
+<!-- START Footer  -->
+
+<section class="footer">
+
+    <div class="share" >
+        <a href="https://www.linkedin.com/in/jesica-moreau-b8132b15b/" class="fab fa-linkedin"></a>
+    </div>
+    
+    <div class="creditos" style="color: rgb(133, 133, 133)">Creado por <span>Jesica Moreau</span>__w00t-w00t</div>
+  
+  </section>
+  
+  <!-- END footer-->
+
+</body>
+</html>
